@@ -7,10 +7,12 @@ const studentSchema = new Schema({
         type: String,
         required: true
     },
+    admin:{
+        type:Boolean,
+        default:false
+    }
 });
 
 studentSchema.plugin(passportLocalMongoose);
-
-
 
 module.exports = mongoose.model('Student', studentSchema);
