@@ -118,6 +118,10 @@ app.get("/mocktests", (req, res) => {
     res.render("mocktests")
 });
 
+app.get("/accsettings", (req, res) => {
+    res.render("accsettings")
+});
+
 app.get("/mocktestresult", (req, res) => {
     res.render("mocktestresult");
 });
