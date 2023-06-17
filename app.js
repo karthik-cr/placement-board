@@ -114,6 +114,10 @@ app.get("/admindashboard", async(req, res) => {
     res.render("admindashboard",{students})
 });
 
+app.get("/adminaddtest", (req, res) => {
+    res.render("adminaddtest")
+});
+
 app.get("/mocktests", (req, res) => {
     res.render("mocktests")
 });

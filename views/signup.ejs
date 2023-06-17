@@ -141,7 +141,7 @@
               <form id="formAuthentication" class="mb-3" action="/signup" method="POST">
                 <div class="mb-3">
                   <label for="username" class="form-label">Username</label>
-                  <input
+                  <input required
                     type="text"
                     class="form-control"
                     id="username"
@@ -169,9 +169,42 @@
                   </div>
                 </div>
 
+<!-- Added for college selection -->
+                <div class="mb-3">
+                  <label for="exampleFormControlSelect1" class="form-label">College Name</label>
+                    <select class="form-select" id="exampleFormControlSelect1" aria-label="Default select example">
+                      <option style="color:#9c9c9c" selected>Select College</option>
+                      <option value="1" >COLLEGE OF ENGINEERING KARUNAGAPPALLY</option>
+                      <option value="2">COLLEGE OF ENGINEERING PERUMON</option>
+                      <option value="3">COLLEGE OF ENGINEERING ATTINGAL</option>
+                      <option value="4">COLLEGE OF ENGINEERING CHERTHALA</option>
+                      <option value="5">COLLEGE OF ENGINEERING ADOOR</option>
+                      <option value="6">COLLEGE OF ENGINEERING KOTTARAKKARA</option>
+                      <option value="7">COLLEGE OF ENGINEERING VADAKARA</option>
+                    </select>
+                </div>
+
+                <div class="mb-3">
+                  <div class="form-floating">
+                    <input
+                       type="text"
+                       class="form-control"
+                       id="floatingInput"
+                       placeholder="eg: VDA19CS050"
+                       aria-describedby="floatingInputHelp"
+                     />
+                    <label for="floatingInput">Register Number</label>
+                     <div id="floatingInputHelp" class="form-text">
+                         We'll never share your details with anyone else.
+                     </div>
+                 </div>
+                  <br>
+                </div>
+
+<!-- Added okey -->
                 <div class="mb-3">
                   <div class="form-check">
-                    <input class="form-check-input" type="checkbox" id="terms-conditions" name="terms" />
+                    <input class="form-check-input" type="checkbox" required id="terms-conditions" name="terms" />
                     <label class="form-check-label" for="terms-conditions">
                       I agree to
                       <a href="javascript:void(0);">privacy policy & terms</a>
