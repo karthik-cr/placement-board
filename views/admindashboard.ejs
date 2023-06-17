@@ -153,6 +153,13 @@
             </li>
             <!-- Cards -->
             <li class="menu-item">
+              <a href="/adminaddresult" class="menu-link">
+                <i class="far fa-address-card" style="font-size: 18px;"></i>
+                <div data-i18n="Basic">&nbsp&nbsp  Send Result</div>
+              </a>
+            </li>
+            <!-- Cards -->
+            <li class="menu-item">
               <a href="cards-basic.html" class="menu-link">
                 <i class="menu-icon tf-icons bx bx-collection"></i>
                 <div data-i18n="Basic">Test</div>
@@ -321,7 +328,7 @@
                       </thead>
                       <tbody class="table-border-bottom-0">
 
-                        <% students.forEach(student => { %>
+                        <% students.reverse().forEach(student => { %>
                             <% if(student.username !== "admin"){ %>
                          
                         
@@ -341,7 +348,7 @@
                                 <button class="btn btn-primary active"
                                   type="button"
                                   data-bs-toggle="offcanvas"
-                                  data-bs-target="#offcanvasBoth"
+                                  data-bs-target="#offcanvasBoth<%= student._id %>"
                                   aria-controls="offcanvasBoth">
                                       Details
                                 </button>
@@ -349,7 +356,7 @@
                             class="offcanvas offcanvas-end"
                             data-bs-scroll="true"
                             tabindex="-1"
-                            id="offcanvasBoth"
+                            id="offcanvasBoth<%= student._id %>"
                             aria-labelledby="offcanvasBothLabel"
                             >
 
@@ -364,10 +371,10 @@
                           </div>
                           <div class="offcanvas-body my-auto mx-0 flex-grow-0">
                             <p class="text-center">
-                              Student Name: namename<br><br>
-                              Email: abcd@gmail.com<br><br>
-                              College Name: clg of vda<br><br>
-                              Registeration Number: VDA19CS050<br><br>
+                              Student Name: <%= student.username %><br><br>
+                              Email: <%= student.email %><br><br>
+                              College Name: <%= student.collegeName %><br><br>
+                              Registeration Number: <%= student.registerNumber %><br><br>
                             </p>
                             <br><br><br>
                             <button type="button" class="btn btn-primary mb-2 d-grid w-100">Continue</button>

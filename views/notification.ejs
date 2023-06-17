@@ -31,6 +31,7 @@
 
     <meta name="description" content="" />
     <script src='https://kit.fontawesome.com/a076d05399.js' crossorigin='anonymous'></script>
+    
 
     <!-- Favicon -->
     <link rel="icon" type="image/x-icon" href="../assets/img/favicon/favicon.ico" />
@@ -62,6 +63,7 @@
     <!--! Template customizer & Theme config files MUST be included after core stylesheets and helpers.js in the <head> section -->
     <!--? Config:  Mandatory theme config file contain global vars & default theme options, Set your preferred theme option in this file.  -->
     <script src="../assets/js/config.js"></script>
+    
   </head>
 
   <body>
@@ -387,7 +389,7 @@
                         This is an info dismissible alert — check it out!
                         <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
                       </div> -->
-                    <%  notifications.forEach(element => { %>
+                    <%  notifications.reverse().forEach(element => { %>
                       <div class="alert alert-dark alert-dismissible mb-0" role="alert">
                         <%= element.title %>
                         <%=   element.description %>

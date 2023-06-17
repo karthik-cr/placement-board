@@ -152,12 +152,12 @@
                 </div>
                 <div class="mb-3">
                   <label for="email" class="form-label">Email</label>
-                  <input type="text" class="form-control" id="email" name="email" placeholder="Enter your email" />
+                  <input required type="text" class="form-control" id="email" name="email" placeholder="Enter your email" />
                 </div>
                 <div class="mb-3 form-password-toggle">
                   <label class="form-label" for="password">Password</label>
                   <div class="input-group input-group-merge">
-                    <input
+                    <input required
                       type="password"
                       id="password"
                       class="form-control"
@@ -172,25 +172,25 @@
 <!-- Added for college selection -->
                 <div class="mb-3">
                   <label for="exampleFormControlSelect1" class="form-label">College Name</label>
-                    <select class="form-select" id="exampleFormControlSelect1" aria-label="Default select example">
+                    <select name="collegeName" class="form-select" id="exampleFormControlSelect1" aria-label="Default select example">
                       <option style="color:#9c9c9c" selected>Select College</option>
-                      <option value="1" >COLLEGE OF ENGINEERING KARUNAGAPPALLY</option>
-                      <option value="2">COLLEGE OF ENGINEERING PERUMON</option>
-                      <option value="3">COLLEGE OF ENGINEERING ATTINGAL</option>
-                      <option value="4">COLLEGE OF ENGINEERING CHERTHALA</option>
-                      <option value="5">COLLEGE OF ENGINEERING ADOOR</option>
-                      <option value="6">COLLEGE OF ENGINEERING KOTTARAKKARA</option>
-                      <option value="7">COLLEGE OF ENGINEERING VADAKARA</option>
+                      <option value="COLLEGE OF ENGINEERING KARUNAGAPPALLY" >COLLEGE OF ENGINEERING KARUNAGAPPALLY</option>
+                      <option value="COLLEGE OF ENGINEERING PERUMON">COLLEGE OF ENGINEERING PERUMON</option>
+                      <option value="COLLEGE OF ENGINEERING ATTINGAL">COLLEGE OF ENGINEERING ATTINGAL</option>
+                      <option value="COLLEGE OF ENGINEERING CHERTHALA">COLLEGE OF ENGINEERING CHERTHALA</option>
+                      <option value="COLLEGE OF ENGINEERING ADOOR">COLLEGE OF ENGINEERING ADOOR</option>
+                      <option value="COLLEGE OF ENGINEERING KOTTARAKKARA">COLLEGE OF ENGINEERING KOTTARAKKARA</option>
+                      <option value="COLLEGE OF ENGINEERING VADAKARA">COLLEGE OF ENGINEERING VADAKARA</option>
                     </select>
                 </div>
-
                 <div class="mb-3">
                   <div class="form-floating">
-                    <input
+                    <input required
                        type="text"
                        class="form-control"
                        id="floatingInput"
                        placeholder="eg: VDA19CS050"
+                       name="registerNumber"
                        aria-describedby="floatingInputHelp"
                      />
                     <label for="floatingInput">Register Number</label>
@@ -204,7 +204,7 @@
 <!-- Added okey -->
                 <div class="mb-3">
                   <div class="form-check">
-                    <input class="form-check-input" type="checkbox" required id="terms-conditions" name="terms" />
+                    <input class="form-check-input" type="checkbox" required id="terms-conditions" />
                     <label class="form-check-label" for="terms-conditions">
                       I agree to
                       <a href="javascript:void(0);">privacy policy & terms</a>

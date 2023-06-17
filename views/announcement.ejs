@@ -331,7 +331,7 @@
                 <div class="col-md mb-4 mb-md-0">
                   <small class="text-light fw-semibold">Basic Accordion</small>
                   <div class="accordion mt-3" id="accordionExample">
-                    <% announcements.forEach(element => { %>
+                    <% announcements.reverse().forEach(element => { %>
                    
                     <div class="card accordion-item active">
                       <h2 class="accordion-header" id="headingOne">
@@ -339,7 +339,7 @@
                           type="button"
                           class="accordion-button"
                           data-bs-toggle="collapse"
-                          data-bs-target="#accordionOne"
+                          data-bs-target="#accordion<%= element._id %>"
                           aria-expanded="true"
                           aria-controls="accordionOne"
                         >
@@ -348,8 +348,8 @@
                       </h2>
 
                       <div
-                        id="accordionOne"
-                        class="accordion-collapse collapse show"
+                        id="accordion<%= element._id %>"
+                        class="accordion-collapse collapse "
                         data-bs-parent="#accordionExample"
                       >
                         <div class="accordion-body">

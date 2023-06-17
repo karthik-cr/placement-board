@@ -14,6 +14,7 @@ const LocalStrategy = require('passport-local').Strategy;
 const Student = require('./model/student');
 const RecruiterCall = require('./model/recruiter')
 const Notification = require("./model/notification")
+const MockTest = require("./model/mockTest")
 
 
 // Database connection
@@ -118,13 +119,29 @@ app.get("/adminaddtest", (req, res) => {
     res.render("adminaddtest")
 });
 
-app.get("/mocktests", (req, res) => {
-    res.render("mocktests")
+app.get("/adminaddresult", (req, res) => {
+    res.render("adminaddresult")
+});
+
+app.get("/mocktests", async (req, res) => {
+    const mockTest = await MockTest.find({});
+    const user = req.user
+    res.render("mocktests",{mockTest,user})
 });
 
 app.get("/accsettings", (req, res) => {
     res.render("accsettings")
 });
+
+app.get("/mockTest/:id",async (req,res)=>{
+    const {id} = req.params
+    const {url} = req.query
+    const userId = req.user._id
+    const user = await Student.findById(userId)
+    user.attended.push(id);
+    await user.save()
+    res.redirect(url)
+})
 
 app.get("/mocktestresult", (req, res) => {
     res.render("mocktestresult");
@@ -146,6 +163,12 @@ app.get("/forgotpassword", (req, res) => {
     res.render("forgotpassword");
 });
 
+app.post("/mockTest",async (req,res)=>{
+    const mockTest = new MockTest(req.body)
+    await mockTest.save();
+    res.redirect("/adminaddtest")
+});
+
 app.get("/undermaintenance", (req, res) => {
     res.render("undermaintenance");
 });
@@ -165,7 +188,7 @@ app.post("/bcannouncement", async (req, res) => {
     const recruit = new RecruiterCall({ recruiterName: companyName, deadline: deadLine, description, prerequisites: preRequest, joinLink: link })
     await recruit.save()
 
-    res.redirect('/announcement');
+    res.redirect('/admindashboard');
 })
 
 app.get("/bcnotification", (req, res) => {
@@ -177,7 +200,7 @@ app.post("/bcnotification", async(req, res) => {
     description = description.trim();
     const notification = new Notification({ title, date, description })
     await notification.save()
-    res.redirect('/notification');
+    res.redirect('/admindashboard');
 });
 
 app.get("/service", (req, res) => {
@@ -186,8 +209,9 @@ app.get("/service", (req, res) => {
 
 app.post("/signup", async (req, res) => {
     try {
-        const { username, email, password } = req.body;
-        const user = new Student({ username, email });
+        const { username, email, password,collegeName,registerNumber } = req.body;
+        // console.log(req.body)
+        const user = new Student({ username, email,collegeName,registerNumber});
         const registeredUser = await Student.register(user, password);
         req.flash("success","signup successed")
         res.redirect("/login");

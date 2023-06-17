@@ -10,8 +10,23 @@ const studentSchema = new Schema({
     admin:{
         type:Boolean,
         default:false
+    },
+    collegeName:{
+        type:String,
+        require:true
+    },
+    registerNumber:{
+        type:String,
+        require:true
+    },
+    attended:
+    [
+    {
+        type:String
     }
+]
 });
+
 
 studentSchema.plugin(passportLocalMongoose);
 

@@ -120,7 +120,7 @@
             <br>
             <!-- Dashboard -->
             <li class="menu-item">
-              <a href="/admindashboard" class="menu-link">
+              <a href="#" class="menu-link">
                 <i class="menu-icon tf-icons bx bx-home-circle"></i>
                 <div data-i18n="Analytics">Dashboard</div>
               </a>
@@ -143,14 +143,14 @@
               </a>
             </li>
             <!-- Cards -->
-            <li class="menu-item active">
+            <li class="menu-item">
               <a href="/adminaddtest" class="menu-link">
                 <i class="far fa-address-card" style="font-size: 18px;"></i>
                 <div data-i18n="Basic">&nbsp&nbsp  Send Mocktests</div>
               </a>
             </li>
             <!-- Cards -->
-            <li class="menu-item">
+            <li class="menu-item active">
               <a href="/adminaddresult" class="menu-link">
                 <i class="far fa-address-card" style="font-size: 18px;"></i>
                 <div data-i18n="Basic">&nbsp&nbsp  Send Result</div>
@@ -292,13 +292,13 @@
             <!-- Content -->
 
             <div class="container-xxl flex-grow-1 container-p-y">
-              <h4 class="fw-bold py-3 mb-4"><span class="text-muted fw-light">Broadcast /</span> Test</h4>
+              <h4 class="fw-bold py-3 mb-4"><span class="text-muted fw-light">Send to Students /</span> Result</h4>
 
               <div class="row">
                 <div class="col-md-12">
                   <ul class="nav nav-pills flex-column flex-md-row mb-3">
                     <li class="nav-item">
-                      <a class="nav-link active" href="javascript:void(0);"><i class="bx bx-user me-1"></i> Add Mocktests</a>
+                      <a class="nav-link active" href="javascript:void(0);"><i class="bx bx-user me-1"></i> Add Mocktests Result</a>
                     </li>
                     <!-- <li class="nav-item">
                       <a class="nav-link" href="pages-account-settings-notifications.html"
@@ -347,49 +347,60 @@
                     </div> -->
                     <hr class="my-0" />
                     <div class="card-body">
-                      <form id="formAccountSettings" method="POST" action="/mockTest">
+                      <form id="formAccountSettings" method="POST" action="/bcnotification">
                         <div class="row">
                           <div class="mb-3 col-md-6">
-                            <label for="firstName" class="form-label">Mocktest Name</label>
+                            <label for="firstName" class="form-label">Student Name</label>
                             <input
                               class="form-control"
                               type="text"
-                              name="testName"
+                              name="title"
+                              value=""
+                              autofocus
+                            />
+                          </div>
+                          <div class="mb-3 col-md-6">
+                            <label for="firstName" class="form-label">Mock Testname</label>
+                            <input
+                              class="form-control"
+                              type="text"
+                              name="title"
                               value=""
                               autofocus
                             />
                           </div>
                           <div class="mb-3 col-md-6">
                             <label for="exampleFormControlSelect1" class="form-label">Mocktest Type</label>
-                    <select class="form-select" name="type" id="exampleFormControlSelect1" aria-label="Default select example">
+                    <select class="form-select" id="exampleFormControlSelect1" aria-label="Default select example">
                       <option style="color:#9c9c9c" selected>Select Type</option>
-                      <option value="Technical Tests" >Technical Tests</option>
-                      <option value="Aptitude Tests">Aptitude Tests</option>
-                      <option value="Verbal Reasoning">Verbal Reasoning</option>
-                      <option value="Diagrammatics Tests">Diagrammatics Tests</option>
+                      <option value="1" >Technical Tests</option>
+                      <option value="2">Aptitude Tests</option>
+                      <option value="3">Verbal Reasoning</option>
+                      <option value="4">Diagrammatics Tests</option>
                     </select>
                           </div>
                           <div class="mb-3 col-md-6">
-                            <label for="exampleFormControlSelect1" class="form-label">Mocktest Status</label>
-                    <select class="form-select" name="status" id="exampleFormControlSelect1" aria-label="Default select example">
-                      <option style="color:#9c9c9c" selected>Select Status</option>
-                      <option value="ACTIVE" >ACTIVE</option>
-                      <option value="SCHEDULED">SCHEDULED</option>
-                    </select>
+                            <label for="firstName" class="form-label">total Mark</label>
+                            <input
+                              class="form-control"
+                              type="text"
+                              name="title"
+                              value=""
+                              autofocus
+                            />
                           </div>
                           <div class="mb-3 col-md-6">
-                            <label class="form-label" for="phoneNumber">Test Link</label>
-                            <div class="input-group input-group-merge">
-                              
-                              <input
-                                type="url"
-                                id="phoneNumber"
-                                name="link"
-                                class="form-control"
-                               
-                              />
-                            </div>
+                            <label for="firstName" class="form-label">Obtained Mark</label>
+                            <input
+                              class="form-control"
+                              type="text"
+                              name="title"
+                              value=""
+                              autofocus
+                            />
                           </div>
+                          
+                         
                           <!-- <div class="mb-3 col-md-6">
                             <label class="form-label">Pre requstes</label>
                             
