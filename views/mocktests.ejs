@@ -326,7 +326,8 @@
               <h4 class="fw-bold py-3 mb-4"><span class="text-muted fw-light">Training /</span> Mock Tests</h4>
 
               <!-- Basic Bootstrap Table -->
-
+              <small>Warning: Once you click the Mock Test Attend Button, You have to attend the test and that time the button would be disable, So cearfully click to the 'Click to Attend' button. All the best to your test.<br></small>
+              <br>
 
               <!-- Striped Rows -->
               <div class="card">
@@ -352,7 +353,8 @@
                         <td>
                           <div class="demo-inline-spacing">
                             <a href="/mockTest/<%= data._id %>?url=<%= data.link %>">
-                            <small><button type="submit" class="btn btn-primary <%= user.attended.find(da=>da==data._id)?"disabled":"active" %>">Click to Attend</button></small>
+                            <small><button type="submit" 
+                                           class="btn btn-primary <%= user.attended.find(da=>da==data._id)?"disabled":"active" %>">Click to Attend</button></small>
                           </a>
                         </td>
                       </tr>

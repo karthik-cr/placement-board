@@ -30,6 +30,7 @@
     <title>Accordion - UI elements | Sneat - Bootstrap 5 HTML Admin Template - Pro</title>
 
     <meta name="description" content="" />
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
     <script src='https://kit.fontawesome.com/a076d05399.js' crossorigin='anonymous'></script>
 
     <!-- Favicon -->
@@ -161,8 +162,8 @@
             <!-- Cards -->
             <li class="menu-item active">
               <a href="/announcement" class="menu-link">
-                <i class="fas fa-bullhorn"  style='font-size:15.5px'></i>
-                <div data-i18n="Basic"> &nbsp &nbsp Announcement</div>
+                <i class='fas fa-award' style='font-size:24px'></i>
+                <div data-i18n="Basic">Announcement </div>
               </a>
             </li>
             <!-- Cards -->
@@ -323,13 +324,13 @@
             <!-- Content -->
 
             <div class="container-xxl flex-grow-1 container-p-y">
-              <h4 class="fw-bold py-3 mb-4"><span class="text-muted fw-light">UI elements /</span> Accordion</h4>
+              <h4 class="fw-bold py-3 mb-4"><span class="text-muted fw-light">Recruitments /</span> Announcement</h4>
 
               <!-- Accordion -->
-              <h5 class="mt-4">Accordion</h5>
+              <h5 class="mt-4">Announcement</h5>
               <div class="row">
                 <div class="col-md mb-4 mb-md-0">
-                  <small class="text-light fw-semibold">Basic Accordion</small>
+                  <small class="text-light fw-semibold">Sort by: Recency</small>
                   <div class="accordion mt-3" id="accordionExample">
                     <% announcements.reverse().forEach(element => { %>
                    
@@ -364,7 +365,7 @@
                       </div>&nbsp&nbsp
                       &nbsp&nbsp<a href=<%= element.joinLink %>>&nbsp&nbsp
                         <%= element.joinLink %>
-                      </a>
+                      </a><br>
                     </div>
                     <% }) %>
                   </div>
@@ -495,16 +496,16 @@
       <!-- Overlay -->
       <div class="layout-overlay layout-menu-toggle"></div>
     </div>
-    <!-- / Layout wrapper -->
+    <!-- / Create Button -->
 
-    <div class="buy-now">
+    <!-- <div class="buy-now">
       <a
         href="/bcannouncement"
         target="_blank"
         class="btn btn-danger btn-buy-now"
         >Create Announcement</a
       >
-    </div>
+    </div> -->
 
     <!-- Core JS -->
     <!-- build:js assets/vendor/js/core.js -->

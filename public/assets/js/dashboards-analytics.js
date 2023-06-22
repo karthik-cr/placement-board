@@ -279,7 +279,7 @@
   const growthChartEl = document.querySelector('#growthChart'),
     growthChartOptions = {
       series: [78],
-      labels: ['Growth'],
+      labels: ['Improved'],
       chart: {
         height: 240,
         type: 'radialBar'
@@ -427,7 +427,7 @@
         width: 130,
         type: 'donut'
       },
-      labels: ['Electronic', 'Sports', 'Decor', 'Fashion'],
+      labels: ['Workshops', 'Others', 'Internship', 'Mocktest'],
       series: [85, 15, 50, 50],
       colors: [config.colors.primary, config.colors.secondary, config.colors.info, config.colors.success],
       stroke: {
@@ -473,9 +473,9 @@
                 show: true,
                 fontSize: '0.8125rem',
                 color: axisColor,
-                label: 'Weekly',
+                label: 'Workshops',
                 formatter: function (w) {
-                  return '38%';
+                  return '85%';
                 }
               }
             }
