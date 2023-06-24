@@ -163,7 +163,8 @@ app.get("/accsettings", (req, res) => {
 // })
 
 app.get("/accountdetails", (req, res) => {
-  res.render("accountdetails");
+  const user = req.user;
+  res.render("accountdetails", { user });
 });
 app.get("/adminstudentsdetails", (req, res) => {
   res.render("adminstudentsdetails");
