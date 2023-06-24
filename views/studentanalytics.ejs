@@ -27,11 +27,10 @@
       content="width=device-width, initial-scale=1.0, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0"
     />
 
-    <title>Alerts - UI elements | Sneat - Bootstrap 5 HTML Admin Template - Pro</title>
+    <title>Account settings - Account | Sneat - Bootstrap 5 HTML Admin Template - Pro</title>
 
     <meta name="description" content="" />
     <script src='https://kit.fontawesome.com/a076d05399.js' crossorigin='anonymous'></script>
-    
 
     <!-- Favicon -->
     <link rel="icon" type="image/x-icon" href="../assets/img/favicon/favicon.ico" />
@@ -63,7 +62,6 @@
     <!--! Template customizer & Theme config files MUST be included after core stylesheets and helpers.js in the <head> section -->
     <!--? Config:  Mandatory theme config file contain global vars & default theme options, Set your preferred theme option in this file.  -->
     <script src="../assets/js/config.js"></script>
-    
   </head>
 
   <body>
@@ -108,6 +106,7 @@
                 </svg>
               </span>
               <span class="app-brand-text demo menu-text fw-bolder ms-2"><div style="text-transform:uppercase;"> <h5>Placement Board</h5></div></span>
+
             <!-- </a> -->
 
             <a href="javascript:void(0);" class="layout-menu-toggle menu-link text-large ms-auto d-block d-xl-none">
@@ -119,112 +118,27 @@
 
           <ul class="menu-inner py-1">
             <br>
-
-
-
-
             <!-- Dashboard -->
             <li class="menu-item">
-              <a href="/dashboard" class="menu-link">
+              <a href="/recruitersdash" class="menu-link">
                 <i class="menu-icon tf-icons bx bx-home-circle"></i>
-                <div data-i18n="Analytics">Dashboard</div>
+                <div data-i18n="Analytics">Dashboard Recruiters</div>
               </a>
             </li>
 
-           
-            <li class="menu-header small text-uppercase">
-              <span class="menu-header-text">Pages</span>
-            </li>
-            <li class="menu-item">
-              <a href="javascript:void(0);" class="menu-link menu-toggle">
-                <i class="fas fa-user-alt" style='font-size:17px'></i>
-                <div data-i18n="Account Settings">&nbsp &nbsp Account</div>
-              </a>
-              <ul class="menu-sub">
-                <li class="menu-item">
-                  <a href="/accsettings" class="menu-link">
-                    <i class="fas fa-user-cog" style='font-size:16px'></i>
-                    <div data-i18n="Account">&nbsp Account Settings</div>
-                  </a>
-                </li>
-                <li class="menu-item">
-                  <a href="/error" class="menu-link">
-                    <i class="fas fa-user-edit" style='font-size:16px'></i>
-                    <div data-i18n="Notifications">&nbsp Update Profile</div>
-                  </a>
-                </li>
       
-              </ul>
-            </li>
+           <!-- Cards -->
+           <li class="menu-item active">
+            <a href="/studentanalytics" class="menu-link">
+              <i class="menu-icon tf-icons bx bx-collection"></i>
+              <div data-i18n="Basic">Students Analytics</div>
+            </a>
+          </li>
             
-            <!-- Cards -->
-            <li class="menu-item active">
-              <a href="/notification" class="menu-link">
-                <i class="far fa-bell" style='font-size:20px'></i>
-                <div data-i18n="Basic">&nbsp &nbsp Notifications</div>
-              </a>
-            </li>
-            <!-- Cards -->
-            <li class="menu-item">
-              <a href="/announcement" class="menu-link">
-                <i class="fas fa-bullhorn"  style='font-size:15.5px'></i>
-                <div data-i18n="Basic"> &nbsp &nbsp Announcement</div>
-              </a>
-            </li>
-            <!-- Cards -->
-            <li class="menu-item">
-              <a href="/mocktests" class="menu-link">
-                <i class="fas fa-marker" style='font-size:17px'></i>
-                <div data-i18n="Basic">&nbsp &nbsp Mock Tests</div>
-              </a>
-               <!-- Cards -->
-            <li class="menu-item">
-              <a href="/mocktestresult" class="menu-link">
-                <i class="fas fa-medal" style='font-size:17px'></i>
-                <div data-i18n="Basic">&nbsp &nbsp Mock Test Results</div>
-              </a>
-               <!-- Cards -->
-            <li class="menu-item">
-              <a href="cards-basic.html" class="menu-link">
-                <i class="fas fa-dice" style='font-size:15px'></i>
-                <div data-i18n="Basic">&nbsp &nbsp Tips for Placement</div>
-              </a> <!-- Cards -->
-              <li class="menu-item">
-                <a href="cards-basic.html" class="menu-link">
-                  <i class="far fa-handshake" style='font-size:16px'></i>
-                  <div data-i18n="Basic">&nbsp &nbsp Recruiters Details</div>
-                </a>
-              </a> <!-- Cards -->
-              <li class="menu-item">
-                <a href="cards-basic.html" class="menu-link">
-                  <i class="fas fa-graduation-cap" style='font-size:17px'></i>
-                  <div data-i18n="Basic">&nbsp &nbsp Placement History</div>
-                </a>
-              </a> <!-- Cards -->
-              <li class="menu-item">
-                <a href="cards-basic.html" class="menu-link">
-                  <i class="fas fa-shapes" style='font-size:20px'></i>
-                  <div data-i18n="Basic">&nbsp &nbsp Events for attend</div>
-                </a>
-              </a> <!-- Cards -->
-              <li class="menu-item">
-                <a href="cards-basic.html" class="menu-link">
-                  <i class="menu-icon tf-icons bx bx-collection"></i>
-                  <div data-i18n="Basic">Test</div>
-                </a>
-
-            </li><!-- Cards -->
-            <li class="menu-item">
-              <a href="cards-basic.html" class="menu-link">
-                <i class="far fa-comments" style='font-size:20px'></i>
-                <div data-i18n="Basic"> &nbsp &nbsp FAQs</div>
-              </a>
-            </li>
-
+           
         </aside>
       
-
-
+        <!-- / Menu -->
 
         <!-- Layout container -->
         <div class="layout-page">
@@ -276,7 +190,7 @@
                             </div>
                           </div>
                           <div class="flex-grow-1">
-                            <span class="fw-semibold d-block">John Doe</span>
+                            <span class="fw-semibold d-block">Placement Officer</span>
                             <small class="text-muted">Admin</small>
                           </div>
                         </div>
@@ -301,7 +215,7 @@
                       <a class="dropdown-item" href="#">
                         <span class="d-flex align-items-center align-middle">
                           <i class="flex-shrink-0 bx bx-credit-card me-2"></i>
-                          <span class="flex-grow-1 align-middle">Billing</span>
+                          <span class="flex-grow-1 align-middle">Alerts</span>
                           <span class="flex-shrink-0 badge badge-center rounded-pill bg-danger w-px-20 h-px-20">4</span>
                         </span>
                       </a>
@@ -310,7 +224,7 @@
                       <div class="dropdown-divider"></div>
                     </li>
                     <li>
-                      <a class="dropdown-item" href="auth-login-basic.html">
+                      <a class="dropdown-item" href="/login">
                         <i class="bx bx-power-off me-2"></i>
                         <span class="align-middle">Log Out</span>
                       </a>
@@ -329,81 +243,64 @@
             <!-- Content -->
 
             <div class="container-xxl flex-grow-1 container-p-y">
-              <h4 class="fw-bold py-3 mb-4"><span class="text-muted fw-light">Notifications /</span> Alerts</h4>
-              <div class="row mb-4">
-                <!-- Basic Alerts -->
-                <!--
-                <div class="col-md mb-4 mb-md-0">
-                  <div class="card">
-                    <h5 class="card-header">Basic Alerts</h5>
-                    <div class="card-body">
-                      <div class="alert alert-primary" role="alert">This is a primary alert — check it out!</div>
+              <h4 class="fw-bold py-3 mb-4"><span class="text-muted fw-light">View /</span> Students Analytics (For recruiters)</h4>
 
-                      <div class="alert alert-secondary" role="alert">This is a secondary alert — check it out!</div>
+              <div class="row">
+                <div class="col-md-12">
+                    <form method="post">
+                  <ul class="nav nav-pills flex-column flex-md-row mb-3
+                  ">
+                    <li class="nav-item">
+                        <!-- <a class="nav-link active" href="javascript:void(0);"><i class="bx bx-user me-1"></i> Add Notification</a> -->
+                        <!-- <label for="exampleFormControlSelect1" class="form-label">Students List</label> -->
+                        <select class="form-select" name="status" id="exampleFormControlSelect1" aria-label="Default select example">
+                          <option style="color:#9c9c9c" selected>Select Student</option>
+                          <option value="Name1" >Name 1</option>
+                          <option value="Name2">Name 2</option>
 
-                      <div class="alert alert-success" role="alert">This is a success alert — check it out!</div>
+                        </select>  
+                    </li>
+                    <li class="nav-item">
+                      <!-- <a class="nav-link active" href="javascript:void(0);"><i class="bx bx-user me-1"></i> View Details</a> -->
+                      &nbsp; &nbsp;
+                      <button type="submit" class="btn btn-primary me-2">View Details</button>
+                    </li>
+                
+                  </ul>
+                </form>
 
-                      <div class="alert alert-danger" role="alert">This is a danger alert — check it out!</div>
 
-                      <div class="alert alert-warning" role="alert">This is a warning alert — check it out!</div>
+                  <div class="card mb-12">
+                    <h5 class="card-header">Student Details</h5>
+                    
+                    <div class="table-responsive text-nowrap">
+                        <table class="table table-striped">
+                          <thead>
+                            <tr>
+                              <th>Student Name</th>
+                              <th>Test Name</th>
+                              <th>Test Type</th>
+                              <th>Marks in %</th>
+                            </tr>
+                          </thead>
+                          <tbody class="table-border-bottom-0">
+                            <% students.sort().forEach(student=>{ %>
+                                <% student.marks.forEach((el,index)=>{ %>
+                            <tr>
+                                <td><b><%= index===0?student.username:"" %></b></td>
+                                <td><%= el.testName %></td>
+                                <td><%= el.testType %></td>
+                                <td><%= (el.obtainedMark/el.totalMark)*100 %>%</td>
+                            </tr>
+                            <% }) %>
+                            <!-- <hr> -->
+                            <% }) %>
+                            </tbody>
+                            </table>
 
-                      <div class="alert alert-info" role="alert">This is an info alert — check it out!</div>
+<br><hr>
+                    
 
-                      <div class="alert alert-dark mb-0" role="alert">This is a dark alert — check it out!</div>
-                    </div>
-                  </div>
-                </div>
-              -->
-                <!--/ Basic Alerts -->
-                <!-- Dismissible Alerts -->
-                <div class="col-md">
-                  <div class="card">
-                    <h5 class="card-header">Important Notifications</h5>
-                    <div class="card-body">
-                      <!-- <div class="alert alert-primary alert-dismissible" role="alert">
-                        This is a primary dismissible alert — check it out!
-                        <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
-                      </div>
-
-                      <div class="alert alert-secondary alert-dismissible" role="alert">
-                        This is a secondary dismissible alert — check it out!
-                        <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
-                      </div>
-
-                      <div class="alert alert-success alert-dismissible" role="alert">
-                        This is a success dismissible alert — check it out!
-                        <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
-                      </div>
-
-                      <div class="alert alert-danger alert-dismissible" role="alert">
-                        This is a danger dismissible alert — check it out!
-                        <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
-                      </div>
-
-                      <div class="alert alert-warning alert-dismissible" role="alert">
-                        This is a warning dismissible alert — check it out!
-                        <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
-                      </div>
-
-                      <div class="alert alert-info alert-dismissible" role="alert">
-                        This is an info dismissible alert — check it out!
-                        <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
-                      </div> -->
-                    <%  notifications.reverse().forEach(element => { %>
-                      <div class="alert <%= element.type %> alert-dismissible mb-0" role="alert">
-                        <%= element.title %>
-                        <%=   element.description %>
-                        <%= (new Date(element.date)).toLocaleDateString('en-US') %>
-                        <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
-                      </div> <br>
-                    <% }) %>
-                    </div>
-                  </div>
-                </div>
-                <!--/ Dismissible Alerts -->
-              </div>
-            </div>
-            <!-- / Content -->
 
             <!-- Footer -->
             <footer class="content-footer footer bg-footer-theme">
@@ -416,7 +313,24 @@
                   , made with ❤️ by
                   <a href="https://themeselection.com" target="_blank" class="footer-link fw-bolder">Team7</a>
                 </div>
-                
+                <!-- <div>
+                  <a href="https://themeselection.com/license/" class="footer-link me-4" target="_blank">License</a>
+                  <a href="https://themeselection.com/" target="_blank" class="footer-link me-4">More Themes</a>
+
+                  <a
+                    href="https://themeselection.com/demo/sneat-bootstrap-html-admin-template/documentation/"
+                    target="_blank"
+                    class="footer-link me-4"
+                    >Documentation</a
+                  >
+
+                  <a
+                    href="https://github.com/themeselection/sneat-html-admin-template-free/issues"
+                    target="_blank"
+                    class="footer-link me-4"
+                    >Support</a
+                  >
+                </div> -->
               </div>
             </footer>
             <!-- / Footer -->
@@ -431,16 +345,16 @@
       <!-- Overlay -->
       <div class="layout-overlay layout-menu-toggle"></div>
     </div>
-    <!-- / Create Button -->
+    <!-- / Layout wrapper -->
+
     <!-- <div class="buy-now">
       <a
-        href="/bcnotification"
+        href="https://themeselection.com/products/sneat-bootstrap-html-admin-template/"
         target="_blank"
         class="btn btn-danger btn-buy-now"
-        >Create Notification</a
+        >Upgrade to Pro</a
       >
     </div> -->
-    
 
     <!-- Core JS -->
     <!-- build:js assets/vendor/js/core.js -->
@@ -458,6 +372,7 @@
     <script src="../assets/js/main.js"></script>
 
     <!-- Page JS -->
+    <script src="../assets/js/pages-account-settings-account.js"></script>
 
     <!-- Place this tag in your head or just before your close body tag. -->
     <script async defer src="https://buttons.github.io/buttons.js"></script>

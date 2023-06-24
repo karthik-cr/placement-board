@@ -293,7 +293,6 @@
 
             <div class="container-xxl flex-grow-1 container-p-y">
               <h4 class="fw-bold py-3 mb-4"><span class="text-muted fw-light">Send to Students /</span> Result</h4>
-
               <div class="row">
                 <div class="col-md-12">
                   <ul class="nav nav-pills flex-column flex-md-row mb-3">
@@ -347,36 +346,38 @@
                     </div> -->
                     <hr class="my-0" />
                     <div class="card-body">
-                      <form id="formAccountSettings" method="POST" action="/bcnotification">
+                      <form id="formAccountSettings" method="POST" action="/adminaddresult">
                         <div class="row">
                           <div class="mb-3 col-md-6">
                             <label for="firstName" class="form-label">Student Name</label>
-                            <input
-                              class="form-control"
-                              type="text"
-                              name="title"
-                              value=""
-                              autofocus
-                            />
+                            <select class="form-select" name="id" id="exampleFormControlSelect1" aria-label="Default select example">
+                              <option style="color:#9c9c9c" selected>Select Student</option>
+                              <% students.forEach(el=>{ %>
+                                <% if(!el.admin){ %>
+                                <option value="<%= el._id %>"><%= el.username %></option>
+                                <% } %>
+                                <% }) %>
+
+                            </select>
                           </div>
                           <div class="mb-3 col-md-6">
                             <label for="firstName" class="form-label">Mock Testname</label>
                             <input
                               class="form-control"
                               type="text"
-                              name="title"
+                              name="testName"
                               value=""
                               autofocus
                             />
                           </div>
                           <div class="mb-3 col-md-6">
                             <label for="exampleFormControlSelect1" class="form-label">Mocktest Type</label>
-                    <select class="form-select" id="exampleFormControlSelect1" aria-label="Default select example">
+                    <select class="form-select" name="testType" id="exampleFormControlSelect1" aria-label="Default select example">
                       <option style="color:#9c9c9c" selected>Select Type</option>
-                      <option value="1" >Technical Tests</option>
-                      <option value="2">Aptitude Tests</option>
-                      <option value="3">Verbal Reasoning</option>
-                      <option value="4">Diagrammatics Tests</option>
+                      <option value="Technical Tests" >Technical Tests</option>
+                      <option value="Aptitude Tests">Aptitude Tests</option>
+                      <option value="Verbal Reasoning">Verbal Reasoning</option>
+                      <option value="Diagrammatics Tests">Diagrammatics Tests</option>
                     </select>
                           </div>
                           <div class="mb-3 col-md-6">
@@ -384,7 +385,7 @@
                             <input
                               class="form-control"
                               type="text"
-                              name="title"
+                              name="totalMark"
                               value=""
                               autofocus
                             />
@@ -394,7 +395,7 @@
                             <input
                               class="form-control"
                               type="text"
-                              name="title"
+                              name="obtainedMark"
                               value=""
                               autofocus
                             />

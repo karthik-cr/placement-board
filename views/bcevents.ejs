@@ -136,14 +136,20 @@
               </a>
             </li>
             <!-- Cards -->
-            <li class="menu-item active">
+            <li class="menu-item">
               <a href="/bcannouncement" class="menu-link">
                 <i class="fas fa-user-check" style="font-size: 18px;"></i>
                 <div data-i18n="Basic">&nbsp&nbsp Send Announcements</div>
               </a>
             </li>
             <!-- Cards -->
-            <li class="menu-item">
+           <li class="menu-item active">
+            <a href="/bcevents" class="menu-link">
+              <i class="menu-icon tf-icons bx bx-collection"></i>
+              <div data-i18n="Basic">Send Live Events</div>
+            </a>
+            <!-- Cards -->
+            <li class="menu-item ">
               <a href="/adminaddtest" class="menu-link">
                 <i class="far fa-address-card" style="font-size: 18px;"></i>
                 <div data-i18n="Basic">&nbsp&nbsp  Send Mocktests</div>
@@ -220,7 +226,7 @@
 
               <ul class="navbar-nav flex-row align-items-center ms-auto">
                 <!-- Place this tag where you want the button to render. -->
-             
+                
 
                 <!-- User -->
                 <li class="nav-item navbar-dropdown dropdown-user dropdown">
@@ -292,13 +298,13 @@
             <!-- Content -->
 
             <div class="container-xxl flex-grow-1 container-p-y">
-              <h4 class="fw-bold py-3 mb-4"><span class="text-muted fw-light">Broadcast /</span> Announcement</h4>
+              <h4 class="fw-bold py-3 mb-4"><span class="text-muted fw-light">Broadcast /</span> Live Events Details</h4>
 
               <div class="row">
                 <div class="col-md-12">
                   <ul class="nav nav-pills flex-column flex-md-row mb-3">
                     <li class="nav-item">
-                      <a class="nav-link active" href="javascript:void(0);"><i class="bx bx-user me-1"></i> Add Announcement</a>
+                      <a class="nav-link active" href="javascript:void(0);"><i class="bx bx-user me-1"></i> Add Events</a>
                     </li>
                     <!-- <li class="nav-item">
                       <a class="nav-link" href="pages-account-settings-notifications.html"
@@ -347,32 +353,67 @@
                     </div> -->
                     <hr class="my-0" />
                     <div class="card-body">
-                      <form id="formAccountSettings" method="POST" action="/bcannouncement">
+                      <form id="formAccountSettings" method="POST" action="/bcevents">
                         <div class="row">
                           <div class="mb-3 col-md-6">
-                            <label for="firstName" class="form-label">PlacementDrive or Company Name</label>
-                            <input
-                              class="form-control"
-                              type="text"
-                              name="companyName"
-                              value=""
-                              autofocus
-                            />
+                            <label for="firstName" class="form-label">Organization</label>
+                            <select class="form-select" name="orgName" id="exampleFormControlSelect1" aria-label="Default select example">
+                                <option style="color:#9c9c9c" selected>Select Organization</option>
+                                <option value="IEDC CEV" >IEDC CEV</option>
+                                <option value="IEEE SB CEV">IEEE SB CEV</option>
+                                <option value="NSS CEV">NSS CEV</option>
+                                <option value="TinkerHub CEV">TinkerHub CEV</option>
+                                <option value="MuLearn CEV">MuLearn CEV</option>
+                                <option value="Student Union CEV">Student Union CEV</option>
+                                <option value="Others">Others</option>
+                              </select>
                           </div>
                           <div class="mb-3 col-md-6">
-                            <label for="lastName" class="form-label">Deadline</label>
-                            <input class="form-control" type="date" name="deadLine" id="lastName" />
+                            <label for="exampleFormControlSelect1" name="eventType" class="form-label">Event Type</label>
+                    <select class="form-select" name="eventType" id="exampleFormControlSelect1" aria-label="Default select example">
+                      <option style="color:#9c9c9c" selected>Select Type</option>
+                      <option value="Workshop" >Workshop</option>
+                      <option value="Internship">Internship</option>
+                      <option value="Webinar">Webinar</option>
+                      <option value="Orientation">Orientation</option>
+                      <option value="Games">Games</option>
+                      <option value="Compatitions">Compatitions</option>
+                      <option value="Others">Others</option>
+                    </select>
+                          </div>
+                          <div class="mb-3 col-md-6">
+                            <label for="exampleFormControlSelect1" class="form-label">Event Date</label>
+                            <input
+                                type="text"
+                                id="phoneNumber"
+                                name="eventDate"
+                                class="form-control"
+                               
+                              />
+                          </div>
+                          <div class="mb-3 col-md-6">
+                            <label class="form-label" for="phoneNumber">Registration Link</label>
+                            <div class="input-group input-group-merge">
+                              
+                              <input
+                                type="url"
+                                id="phoneNumber"
+                                name="Link"
+                                class="form-control"
+                               
+                              />
+                            </div>
                           </div>
                           <div class="mb-3 col-md-6">
                             <label for="email" class="form-label">Description</label><br>
                             
-                            <textarea id="w3review" name="description" rows="5" cols="57">
+                            <textarea id="w3review" name="Description" rows="3" cols="20">
                             </textarea>
                           </div>
-                          <div class="mb-3 col-md-6">
-                            <label class="form-label">Pre requstes</label><br>
+                          <!-- <div class="mb-3 col-md-6">
+                            <label class="form-label">Pre requstes</label>
                             
-                            <textarea id="w3review" name="preRequest" rows="5" cols="57">
+                            <textarea id="w3review" name="preRequest" rows="5" cols="50">
                             </textarea>
                           </div>
                           <div class="mb-3 col-md-12">
@@ -387,7 +428,7 @@
                                
                               />
                             </div>
-                          </div>
+                          </div> -->
                           <!-- <div class="mb-3 col-md-6">
                             <label for="address" class="form-label">Address</label>
                             <input type="text" class="form-control" id="address" name="address" placeholder="Address" />
