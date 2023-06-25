@@ -167,6 +167,11 @@ app.get("/accountdetails", (req, res) => {
   res.render("accountdetails", { user });
 });
 
+app.get("/profiledetails", (req, res) => {
+  const user = req.user;
+  res.render("profiledetails", { user });
+});
+
 app.get("/placementtips", (req, res) => {
   const user = req.user;
   res.render("placementtips", { user });
