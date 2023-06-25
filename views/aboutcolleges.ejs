@@ -27,10 +27,11 @@
       content="width=device-width, initial-scale=1.0, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0"
     />
 
-    <title>Account settings - Account | Sneat - Bootstrap 5 HTML Admin Template - Pro</title>
+    <title>Alerts - UI elements | Sneat - Bootstrap 5 HTML Admin Template - Pro</title>
 
     <meta name="description" content="" />
     <script src='https://kit.fontawesome.com/a076d05399.js' crossorigin='anonymous'></script>
+    
 
     <!-- Favicon -->
     <link rel="icon" type="image/x-icon" href="../assets/img/favicon/favicon.ico" />
@@ -62,6 +63,7 @@
     <!--! Template customizer & Theme config files MUST be included after core stylesheets and helpers.js in the <head> section -->
     <!--? Config:  Mandatory theme config file contain global vars & default theme options, Set your preferred theme option in this file.  -->
     <script src="../assets/js/config.js"></script>
+    
   </head>
 
   <body>
@@ -107,7 +109,7 @@
               </span>
               <span class="app-brand-text demo menu-text fw-bolder ms-2"><div style="text-transform:uppercase;"> <h5>Placement Board</h5></div></span>
               <div><small class="text-muted"> RECRUITERS ACCOUNT &nbsp;<br>&nbsp; </small><br></div>
-            <!-- </a> -->
+              <!-- </a> -->
 
             <a href="javascript:void(0);" class="layout-menu-toggle menu-link text-large ms-auto d-block d-xl-none">
               <i class="bx bx-chevron-left bx-sm align-middle"></i>
@@ -118,41 +120,42 @@
 
           <ul class="menu-inner py-1">
             <br>
+
             <!-- Dashboard -->
             <li class="menu-item">
-              <a href="/recruitersdash" class="menu-link">
-                <i class="menu-icon tf-icons bx bx-home-circle"></i>
-                <div data-i18n="Analytics">Dashboard</div>
+                <a href="/recruitersdash" class="menu-link">
+                  <i class="menu-icon tf-icons bx bx-home-circle"></i>
+                  <div data-i18n="Analytics">Dashboard</div>
+                </a>
+              </li>
+  
+             <!-- Students Analytics -->
+             <li class="menu-item">
+              <a href="/studentanalytics" class="menu-link">
+                <svg xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 576 512"><style>svg{fill:#787878}</style><path d="M304 240V16.6c0-9 7-16.6 16-16.6C443.7 0 544 100.3 544 224c0 9-7.6 16-16.6 16H304zM32 272C32 150.7 122.1 50.3 239 34.3c9.2-1.3 17 6.1 17 15.4V288L412.5 444.5c6.7 6.7 6.2 17.7-1.5 23.1C371.8 495.6 323.8 512 272 512C139.5 512 32 404.6 32 272zm526.4 16c9.3 0 16.6 7.8 15.4 17c-7.7 55.9-34.6 105.6-73.9 142.3c-6 5.6-15.4 5.2-21.2-.7L320 288H558.4z"/></svg>
+                <div data-i18n="Basic"> &nbsp; &nbsp; Students Analytics</div>
               </a>
             </li>
-
-           <!-- Students Analytics -->
-           <li class="menu-item active">
-            <a href="/studentanalytics" class="menu-link">
-              <svg xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 576 512"><style>svg{fill:#787878}</style><path d="M304 240V16.6c0-9 7-16.6 16-16.6C443.7 0 544 100.3 544 224c0 9-7.6 16-16.6 16H304zM32 272C32 150.7 122.1 50.3 239 34.3c9.2-1.3 17 6.1 17 15.4V288L412.5 444.5c6.7 6.7 6.2 17.7-1.5 23.1C371.8 495.6 323.8 512 272 512C139.5 512 32 404.6 32 272zm526.4 16c9.3 0 16.6 7.8 15.4 17c-7.7 55.9-34.6 105.6-73.9 142.3c-6 5.6-15.4 5.2-21.2-.7L320 288H558.4z"/></svg>
-              <div data-i18n="Basic"> &nbsp; &nbsp; Students Analytics</div>
-            </a>
-          </li>
-
-          <!-- About Colleges -->
-          <li class="menu-item">
-            <a href="/aboutcolleges" class="menu-link">
-              <svg xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 512 512"><style>svg{fill:#787878}</style><path d="M243.4 2.6l-224 96c-14 6-21.8 21-18.7 35.8S16.8 160 32 160v8c0 13.3 10.7 24 24 24H456c13.3 0 24-10.7 24-24v-8c15.2 0 28.3-10.7 31.3-25.6s-4.8-29.9-18.7-35.8l-224-96c-8-3.4-17.2-3.4-25.2 0zM128 224H64V420.3c-.6 .3-1.2 .7-1.8 1.1l-48 32c-11.7 7.8-17 22.4-12.9 35.9S17.9 512 32 512H480c14.1 0 26.5-9.2 30.6-22.7s-1.1-28.1-12.9-35.9l-48-32c-.6-.4-1.2-.7-1.8-1.1V224H384V416H344V224H280V416H232V224H168V416H128V224zM256 64a32 32 0 1 1 0 64 32 32 0 1 1 0-64z"/></svg>
-              <div data-i18n="Basic"> &nbsp; &nbsp; About Colleges</div>
-            </a>
-          </li>
-
-          <!-- Contacts -->
-          <li class="menu-item">
-            <a href="/contacts" class="menu-link">
-              <svg xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 512 512"><style>svg{fill:#787878}</style><path d="M64 0C28.7 0 0 28.7 0 64V352c0 35.3 28.7 64 64 64h96v80c0 6.1 3.4 11.6 8.8 14.3s11.9 2.1 16.8-1.5L309.3 416H448c35.3 0 64-28.7 64-64V64c0-35.3-28.7-64-64-64H64z"/></svg>
-              <div data-i18n="Basic"> &nbsp; &nbsp; Contacts</div>
-            </a>
-          </li>
-            
-        </aside>
-      
-        <!-- / Menu -->
+  
+            <!-- About Colleges -->
+            <li class="menu-item active">
+              <a href="/aboutcolleges" class="menu-link">
+                <svg xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 512 512"><style>svg{fill:#787878}</style><path d="M243.4 2.6l-224 96c-14 6-21.8 21-18.7 35.8S16.8 160 32 160v8c0 13.3 10.7 24 24 24H456c13.3 0 24-10.7 24-24v-8c15.2 0 28.3-10.7 31.3-25.6s-4.8-29.9-18.7-35.8l-224-96c-8-3.4-17.2-3.4-25.2 0zM128 224H64V420.3c-.6 .3-1.2 .7-1.8 1.1l-48 32c-11.7 7.8-17 22.4-12.9 35.9S17.9 512 32 512H480c14.1 0 26.5-9.2 30.6-22.7s-1.1-28.1-12.9-35.9l-48-32c-.6-.4-1.2-.7-1.8-1.1V224H384V416H344V224H280V416H232V224H168V416H128V224zM256 64a32 32 0 1 1 0 64 32 32 0 1 1 0-64z"/></svg>
+                <div data-i18n="Basic"> &nbsp; &nbsp; About Colleges</div>
+              </a>
+            </li>
+  
+            <!-- Contacts -->
+            <li class="menu-item">
+              <a href="/contacts" class="menu-link">
+                <svg xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 512 512"><style>svg{fill:#787878}</style><path d="M64 0C28.7 0 0 28.7 0 64V352c0 35.3 28.7 64 64 64h96v80c0 6.1 3.4 11.6 8.8 14.3s11.9 2.1 16.8-1.5L309.3 416H448c35.3 0 64-28.7 64-64V64c0-35.3-28.7-64-64-64H64z"/></svg>
+                <div data-i18n="Basic"> &nbsp; &nbsp; Contacts</div>
+              </a>
+            </li>
+              
+          </aside>
+        
+          <!-- / Menu -->
 
         <!-- Layout container -->
         <div class="layout-page">
@@ -257,78 +260,38 @@
             <!-- Content -->
 
             <div class="container-xxl flex-grow-1 container-p-y">
-              <h4 class="fw-bold py-3 mb-4"><span class="text-muted fw-light">View /</span> Students Analytics (For recruiters)</h4>
-
-              <!-- select student -->
-              <!-- <div class="row">
-                <div class="col-md-12">
-                    <form method="post">
-                  <ul class="nav nav-pills flex-column flex-md-row mb-3
-                  ">
-                    <li class="nav-item">
-                        <select class="form-select" name="status" id="exampleFormControlSelect1" aria-label="Default select example">
-                          <option style="color:#9c9c9c" selected>Select Student</option>
-                          <option value="Name1" >Name 1</option>
-                          <option value="Name2">Name 2</option>
-
-                        </select>  
-                    </li>
-                    <li class="nav-item">
-                      &nbsp; &nbsp;
-                      <button type="submit" class="btn btn-primary me-2">View Details</button>
-                    </li>
+              <h4 class="fw-bold py-3 mb-4"><span class="text-muted fw-light"></span> About Colleges</h4>
+              <div class="row mb-4">
                 
-                  </ul>
-                </form> -->
+                <div class="col-md">
+                  <div class="card">
+                    <h5 class="card-header">tips</h5>
+                    <div class="card-body">
+                     hjkgjhfhjgfhg
+                     khgjhgjhgjh<br>
+                     fjhfhgdfhdhf<br>
+                    </div>
+                  </div>
+                </div>
+                <!--/ Dismissible Alerts -->
+              </div>
+            </div>
+            <!-- / Content -->
 
-
-                  <div class="card mb-12">
-                    <h5 class="card-header">Student Details</h5>
-                    
-                    <div class="table-responsive text-nowrap">
-                        <table class="table table-striped">
-                          <thead>
-                            <tr>
-                              <th>Student Name</th>
-                              <th>Test Name</th>
-                              <th>Test Type</th>
-                              <th>Marks in %</th>
-                            </tr>
-                          </thead>
-                          <tbody class="table-border-bottom-0">
-                            <% students.sort().forEach(student=>{ %>
-                                <% student.marks.forEach((el,index)=>{ %>
-                            <tr>
-                                <td><b><%= index===0?student.username:"" %></b></td>
-                                <td><%= el.testName %></td>
-                                <td><%= el.testType %></td>
-                                <td><%= (el.obtainedMark/el.totalMark)*100 %>%</td>
-                            </tr>
-                            <% }) %>
-                            <!-- <hr> -->
-                            <% }) %>
-                            </tbody>
-                            </table>
-
-<br>
-                    
-
-</div>
-</div><br><hr><br><br>
-<!-- Footer -->
-<footer class="content-footer footer bg-footer-theme">
-  <div class="container-xxl d-flex flex-wrap justify-content-between py-2 flex-md-row flex-column">
-    <div class="mb-2 mb-md-0">
-      ©
-      <script>
-        document.write(new Date().getFullYear());
-    </script>
-      , made with ❤️ by
-      <a href="" target="" class="footer-link fw-bolder">Team7</a>
-    </div>
-  </div>
-</footer>
-<!-- / Footer -->
+            <!-- Footer -->
+            <footer class="content-footer footer bg-footer-theme">
+              <div class="container-xxl d-flex flex-wrap justify-content-between py-2 flex-md-row flex-column">
+                <div class="mb-2 mb-md-0">
+                  ©
+                  <script>
+                    document.write(new Date().getFullYear());
+                  </script>
+                  , made with ❤️ by
+                  <a href="" target="" class="footer-link fw-bolder">Team7</a>
+                </div>
+              </div>
+            </footer>
+            <!-- / Footer -->
 
             <div class="content-backdrop fade"></div>
           </div>
@@ -340,16 +303,16 @@
       <!-- Overlay -->
       <div class="layout-overlay layout-menu-toggle"></div>
     </div>
-    <!-- / Layout wrapper -->
-
+    <!-- / Create Button -->
     <!-- <div class="buy-now">
       <a
-        href="https://themeselection.com/products/sneat-bootstrap-html-admin-template/"
+        href="/bcnotification"
         target="_blank"
         class="btn btn-danger btn-buy-now"
-        >Upgrade to Pro</a
+        >Create Notification</a
       >
     </div> -->
+    
 
     <!-- Core JS -->
     <!-- build:js assets/vendor/js/core.js -->
@@ -367,7 +330,6 @@
     <script src="../assets/js/main.js"></script>
 
     <!-- Page JS -->
-    <script src="../assets/js/pages-account-settings-account.js"></script>
 
     <!-- Place this tag in your head or just before your close body tag. -->
     <script async defer src="https://buttons.github.io/buttons.js"></script>

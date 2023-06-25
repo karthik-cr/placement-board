@@ -166,6 +166,42 @@ app.get("/accountdetails", (req, res) => {
   const user = req.user;
   res.render("accountdetails", { user });
 });
+
+app.get("/placementtips", (req, res) => {
+  const user = req.user;
+  res.render("placementtips", { user });
+});
+
+app.get("/placementhistory", (req, res) => {
+  const user = req.user;
+  res.render("placementhistory", { user });
+});
+
+app.get("/recruitersdetails", (req, res) => {
+  const user = req.user;
+  res.render("recruitersdetails", { user });
+});
+
+app.get("/faq", (req, res) => {
+  const user = req.user;
+  res.render("faq", { user });
+});
+
+app.get("/aboutrecruiters", (req, res) => {
+  const user = req.user;
+  res.render("aboutrecruiters", { user });
+});
+
+app.get("/aboutcolleges", (req, res) => {
+  const user = req.user;
+  res.render("aboutcolleges", { user });
+});
+
+app.get("/contacts", (req, res) => {
+  const user = req.user;
+  res.render("contacts", { user });
+});
+
 app.get("/adminstudentsdetails", (req, res) => {
   res.render("adminstudentsdetails");
 });
