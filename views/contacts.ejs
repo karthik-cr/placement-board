@@ -27,6 +27,8 @@
       content="width=device-width, initial-scale=1.0, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0"
     />
 
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
     <title>Alerts - UI elements | Sneat - Bootstrap 5 HTML Admin Template - Pro</title>
 
     <meta name="description" content="" />
@@ -260,19 +262,19 @@
             <!-- Content -->
 
             <div class="container-xxl flex-grow-1 container-p-y">
-              <h4 class="fw-bold py-3 mb-4"><span class="text-muted fw-light"></span> Contacts</h4>
+              
               <div class="row mb-4">
                 
                 <div class="col-md">
                   <div class="card">
-                    <h5 class="card-header" style="text-align: center;">Contact Us</h5>
+                    <h4 class="fw-bold py-3 mb-4" style="text-align: center;">Contact Us</h4>
                     <div class="card-body">
-                      <form>
+                      <form id="submit-form" action="">
                         <label for="name">Name:</label>
-                        <input class="form-control" type="text" id="name" name="name" required><br>
+                        <input class="form-control" type="text" id="name" placeholder="Enter your company name" name="name" required><br>
                       
                         <label for="email">Email:</label>
-                        <input class="form-control" type="email" id="email" name="email" required><br>
+                        <input class="form-control" type="email" id="email" placeholder="Enter your email" name="email" required><br>
                       
                         <label for="message-type">Message Type:</label>
                         <select  class="form-select" id="message-type" name="message-type">
@@ -283,12 +285,13 @@
                         </select><br>
                       
                         <label for="message">Message:</label>
-                        <textarea class="form-control" id="message" name="message" rows="5" required></textarea><br>
+                        <textarea class="form-control" id="message" placeholder="Enter your message here..." name="message" rows="5" required></textarea><br>
                       
                         <input class="btn btn-primary me-2" type="submit" value="Submit">
                         <input class="btn btn-outline-secondary" type="reset" value="Reset">
                       </form>
                     </div>
+                    <div class="card-body">Once you submit your message, it will be promptly delivered to our dedicated contact email address, <b>team7.project.placementboard@gmail.com</b>, ensuring effective communication and timely response.</div>
                   </div>
                 </div>
                 <!--/ Dismissible Alerts -->
@@ -351,5 +354,25 @@
 
     <!-- Place this tag in your head or just before your close body tag. -->
     <script async defer src="https://buttons.github.io/buttons.js"></script>
+
+    <script>
+      $("#submit-form").submit((e)=>{
+          e.preventDefault()
+          $.ajax({
+              url:"https://script.google.com/macros/s/AKfycbzm8BOuXlQa0s_G7WXuDHv9sc_U7ZidRk-Ep3n79qAP1F2nilyjWHSNG0C6gaOlA0Bnow/exec",
+              data:$("#submit-form").serialize(),
+              method:"post",
+              success:function (response){
+                  alert("Form submitted successfully")
+                  window.location.reload()
+                  //window.location.href="https://google.com"
+              },
+              error:function (err){
+                  alert("Something Error")
+  
+              }
+          })
+      })
+  </script>
   </body>
 </html>
