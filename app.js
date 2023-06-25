@@ -266,6 +266,11 @@ app.get("/studentanalytics", async (req, res) => {
   res.render("studentanalytics", { students });
 });
 
+app.get("/adminstudentanalytics", async (req, res) => {
+  const students = await Student.find({});
+  res.render("adminstudentanalytics", { students });
+});
+
 app.post("/bcannouncement", async (req, res) => {
   let { companyName, deadLine, description, preRequest, link } = req.body;
   description = description.trim();
